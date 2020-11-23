@@ -1,0 +1,42 @@
+// main: ../main.less
+.block-quality{
+    background: url('../images/bg/bg-quality.jpg') no-repeat;
+    background-position: center;
+
+    &__row{
+       margin-bottom: 80px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__row-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        width: 280px;
+    }
+
+    &__item-image{
+        margin-right: 10px;
+    }
+
+    &__item-text{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__item-title{
+        margin-bottom: 5px;
+    }
+
+    &__item-subtitle{
+        font-size: 15px;
+        color: @gray;
+    }
+}
