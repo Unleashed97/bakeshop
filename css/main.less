@@ -1,0 +1,48 @@
+// out: style.css, compress: true
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+p{
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// BUTTONS
+.button{
+    padding: 18px 80px;
+    background-color: @orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: @white;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+// VARS
+@import "vars";
+
+// COMPONENTS
+@import "components/header";
+@import "components/nav";
+@import "components/intro";
