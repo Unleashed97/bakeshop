@@ -1,0 +1,33 @@
+// main: ../main.less
+.bake-nav{
+    display: flex;
+    justify-content: center;
+
+
+    &__item{
+        margin-right: 95px;
+        border-bottom: 2px solid transparent;
+        padding: 3px 0;
+        transition: border .2s linear;
+        text-align: center;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            border-bottom: 2px solid @orange;
+        }
+    }
+
+    &__item-icon{
+        width: 65px;
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    &__item-link{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
