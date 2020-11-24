@@ -1,0 +1,47 @@
+// main: ../main.less
+.footer{
+    background-color: @light-gray;
+    padding: 34px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__logo{
+        width: 30%;
+    }
+
+    &__col{
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 30%) / 3);
+
+        a{
+            text-decoration: none;
+            color: @black;
+        }
+    }
+
+    &__col-text{
+        margin-bottom: 15px;
+
+        &--light{
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+    }
+    
+    &__copy{
+        font-size: 14px;
+        color: @gray;
+        margin-top: 50px;
+        a{
+            margin-left: 30px;
+            text-decoration: none;
+            color: @gray;
+        }
+    }
+
+}
