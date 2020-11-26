@@ -32,6 +32,22 @@
             margin-bottom: 15px;
         }
     }
+
+    &__nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        &-link{
+            margin-bottom: 15px;
+            transition: color .2s linear;
+
+            &:hover{
+                color: @orange;
+
+            }
+        }
+    }
     
     &__copy{
         font-size: 14px;
@@ -41,6 +57,11 @@
             margin-left: 30px;
             text-decoration: none;
             color: @gray;
+
+            &:hover{
+                color: @black;
+                text-decoration: underline;
+            }
         }
     }
 
