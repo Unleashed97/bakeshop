@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
 
-
     &__item{
         margin-right: 95px;
         border-bottom: 2px solid transparent;
@@ -22,13 +21,57 @@
     }
 
     &__item-icon{
+        display: block;
         width: 65px;
         height: 55px;
         margin: 0 auto;
     }
 
-    &__item-link{
+    &__item-text{
+        display: block;
         font-size: 18px;
         text-transform: uppercase;
+    }
+
+    // MEDIA
+    @media @tablet{
+        &__item{
+            margin-right: 50px;
+
+            &-icon{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            &-text{
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media @mobile-landscape{
+        &__item{
+            margin-right: 20px;
+
+            &-text{
+                font-size: 13px;
+            }
+        }
+    }
+
+    @media @mobile{
+        &__item{
+            margin-right: 20px;
+
+            &-icon{
+               width: 30px;
+               height: 30px;
+            }
+
+            &-text{
+                font-size: 11px;
+            }
+        }
     }
 }

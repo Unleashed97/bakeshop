@@ -4,6 +4,7 @@
     padding: 34px 0;
     &__inner{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
     }
@@ -64,5 +65,64 @@
             }
         }
     }
+
+    // MEDIA
+    @media @laptop{
+        &__inner{
+            justify-content: center;
+        }
+        &__logo{
+            width: 50%;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &__col{
+            width: 50%;
+            margin-bottom: 30px;
+            text-align: center;
+
+            &:nth-last-child(-n+2)
+            {
+                margin-bottom: 0;
+            }
+        }
+
+        &__copy{
+            text-align: center;
+            margin-top: 30px;
+            a{
+                display: block;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        
+    }
+
+    @media @mobile{
+        &__logo{
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+            
+        }
+
+        &__col{
+            width: 100%;
+            &:nth-last-child(-n+2){
+                margin-bottom: 30px;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        
+    }
+    
 
 }
