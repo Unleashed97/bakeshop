@@ -1,15 +1,10 @@
 // main: ../main.less
 .contacts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin: 110px 0;
-    // &__inner{
-    //     display: flex;
-    //     justify-content: center;
-    //     width: 100%;
-    //     margin: 110px 0;
-    // }
 
     &__info{
         width: 40%;
@@ -36,5 +31,21 @@
 
     &__map{
         width: 60%;
+    }
+
+    // MEDIA
+    @media @mobile-landscape{
+        margin-top: 60px;
+        margin-bottom: 0;
+
+        &__info{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        &__map{
+            width: 100%;
+        }
     }
 }

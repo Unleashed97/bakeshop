@@ -1,15 +1,17 @@
 // main: ../main.less
 .intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    color: @white;
-
     background: url('../images/bg/bg.jpg') center no-repeat;
     background-size: cover;
     
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        color: @white;
+        text-align: center;
+    }
 
     &__title{
         font-family: 'Amalfi';
@@ -19,7 +21,7 @@
         margin-bottom: 32px;
     }
 
-    &__sub-title{
+    &__subtitle{
         font-family: 'Segoe Print';
         font-size: 30px;
         margin-bottom: 80px;
@@ -27,5 +29,18 @@
 
     &__button{
         text-decoration: none;
+    }
+
+    // MEDIA
+    @media @tablet{
+        &__title{
+            font-size: 100px;
+            margin-bottom: 28px;
+        }
+
+        &__subtitle{
+            font-size: 28px;
+            margin-bottom: 70px;
+        }
     }
 }

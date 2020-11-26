@@ -4,16 +4,17 @@
     background-position: center;
 
     &__row{
-       margin-bottom: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
 
         &:last-child{
             margin-bottom: 0;
         }
-    }
 
-    &__row-inner{
-        display: flex;
-        justify-content: space-between;
+        &--min{
+            padding: 0 125px;
+        }
     }
 
     &__item{
@@ -39,4 +40,37 @@
         font-size: 15px;
         color: @gray;
     }
+
+    // MEDIA
+    @media @laptop{
+        &__row{
+            margin-bottom: 60px;
+            
+        }
+    }
+
+    @media @tablet{
+        &__row{
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &--min{
+                padding: 0;
+            }    
+        }
+
+        &__item{
+            margin-bottom: 50px;
+        }
+    }
+
+    @media @mobile-landscape{
+        &__item{
+            margin-bottom: 40px;
+            
+        }
+    }
+
 }

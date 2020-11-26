@@ -12,6 +12,8 @@
         justify-content: space-between;
         align-items: center;
         color: @white;
+
+        position: relative;
     }
 
     &__logo{
@@ -30,6 +32,12 @@
 
         &:hover{
             color: @orange;
+        }
+    }
+    // MEDIA
+    @media @tablet{
+        &__cart{
+            display: none;
         }
     }
 }
