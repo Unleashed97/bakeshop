@@ -6,6 +6,7 @@
 
     &__link{
         text-decoration: none;
+        border-radius: 10px;
         color: @white;
         padding: 5px 10px;
         margin-right: 50px;
@@ -39,10 +40,66 @@
     }
 
     // MEDIA
+    @media @laptop{
+        &__link{
+            margin-right: 30px;
+        }
+    }
     @media @tablet
     {
+
         &{
             display: none;
         }
+
+        &.active{
+            &{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav__inner{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav__link{
+                margin-right: 0;
+                padding: 20px 10px;
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 700;
+                transition: background .2s linear;
+                
+
+                &::after{
+                    display: none;
+                }
+
+                &:hover{
+                    background-color: #fff;
+                    color: @orange;
+                }
+            }
+        }
+    }
+
+    @media @mobile-landscape{
+        &{
+            min-height: 420px;
+        }
+
+        &__link{
+            padding: 15px 8px;
+            margin-bottom: 15px;
+        }
+
+    }
+
+    @media @mobile{
+
     }
 }
