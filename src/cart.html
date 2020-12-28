@@ -1,0 +1,85 @@
+---
+layout: default
+title: Корзина
+---
+
+<div class="main">
+    <div class="container">
+        <div class="cart"></div>
+        
+        <form class="data data__form">
+            <section class="data__section">
+                <h2 class="data__section-header">Личные данные</h2>
+                <div class="data__section-content">
+                    <div class="data__section-row">
+                        <div class="data__row-item">
+                            <p class="data__row-item-title">Ваше имя</p>
+                            <label class="data__row-item-label">
+                                <p>Представьтесь пожалуйста</p>
+                                <input type="text" class="data__row-item-input" placeholder="Ваше имя">
+                            </label>
+                        </div>
+                        <div class="data__row-item">
+                            <p class="data__row-item-title">E-mail</p>
+                            <label class="data__row-item-label">
+                                <p>На какую почту вам прислать чек?</p>
+                                <input type="email" class="data__row-item-input" placeholder="area@mail.ru">
+                            </label>
+                        </div>
+                        <div class="data__row-item">
+                            <p class="data__row-item-title">Ваш телефон</p>
+                            <label class="data__row-item-label">
+                                <p>На всякий пожарный</p>
+                                <input type="tel" class="data__row-item-input" placeholder="+375 29 999 99 99">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="data__section">
+                <h2 class="data__section-header">Доставка</h2>
+                <div class="data__section-content">
+                    <div class="data__section-row">
+                        <div class="data__row-item">
+                            <p class="data__row-item-title">Город</p>
+                            <input type="text" class="data__row-item-input" placeholder="Город">
+                        </div>
+                        <div class="data__row-item">
+                            <p class="data__row-item-title">Улица</p>
+                            <input type="text" class="data__row-item-input" placeholder="Улица">
+                        </div>
+                        <div class="data__row-item data__row-item--sm">
+                            <p class="data__row-item-title">Дом</p>
+                            <input type="text" class="data__row-item-input" placeholder="Дом">
+                        </div>
+                        <div class="data__row-item data__row-item--sm">
+                            <p class="data__row-item-title">Квартира</p>
+                            <input type="text" class="data__row-item-input" placeholder="Квартира">
+                        </div>
+                    </div>
+                    <div class="data__section-row">
+                        <div class="data__row-item data__row-item--lg">
+                            <p class="data__row-item-title">Комментарий</p>
+                            <textarea name="" id="" class="data__row-item-textarea" placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="data__promo">
+                <p class="data__promo-title">Есть промокод?</p>
+                <div class="data__promo-content">
+                    <div class="data__row-item">
+                        <input type="text" class="data__row-item-input" placeholder="Введите промокод">
+                    </div>
+                    <button class="button button--md">Активировать</button>
+                </div>
+            </div>
+
+            <div class="data__form-footer">
+                <div class="data__form-total">Итог: </div>
+                <button class="button button--min">Оформить заказ</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -38,6 +38,8 @@ h1, h2, h3, h4, h5, h6{
 
 // BUTTONS
 .button{
+    display: inline-block;
+    border: 0;
     padding: 18px 80px;
     background-color: @orange;
     font-family: 'Montserrat', sans-serif;
@@ -59,6 +61,11 @@ h1, h2, h3, h4, h5, h6{
         text-decoration: none;
         text-transform: none;
     }
+
+    &--md{
+        padding: 10px 50px;
+        font-size: 18px;
+    }
 }
 
 // NO SCROLL
@@ -76,6 +83,9 @@ img{
 // VARS
 @import "vars";
 
+// FONTS
+@import "fonts";
+
 // COMPONENTS
 @import "components/header";
 @import "components/nav";
@@ -90,3 +100,4 @@ img{
 @import "components/pay-del";
 @import "components/contacts";
 @import "components/footer";
+@import "components/cart";
