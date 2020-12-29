@@ -28,6 +28,7 @@
         // background-color: @white;
         // mask-image: url('../images/icons/cart.svg');
         // -webkit-mask-image: url('../images/icons/cart.svg');
+        position: relative;
         cursor: pointer;
         font-size: 20px;
         
@@ -39,9 +40,26 @@
             &:hover{
                 color: @orange;
             }
-        }
+        }  
+    }
 
-        
+    &__cart-amount{
+        display: none;
+        text-align: center;
+        line-height: 15px;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        background-color: @orange;
+        font-size: 12px;
+        color: @white;
+
+        &.active{
+            display: block;
+        }
     }
     // MEDIA
     @media @laptop{
