@@ -8,7 +8,7 @@ else{
     const intro = document.querySelector('.intro');
     let introHeight = intro.scrollHeight;
     window.addEventListener('scroll', () =>{
-        if(pageYOffset > introHeight){
+        if(pageYOffset > introHeight - 80){
             header.classList.add('scroll')
         }
         else header.classList.remove('scroll');
