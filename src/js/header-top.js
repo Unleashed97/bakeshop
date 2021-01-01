@@ -1,7 +1,7 @@
 const header = document.querySelector('.header');
 let loc = window.location.pathname;
 
-if(loc == '/cart.html'){
+if(loc !== '/index.html'){
     header.classList.add('scroll');
 }
 else{
@@ -12,7 +12,6 @@ else{
             header.classList.add('scroll')
         }
         else header.classList.remove('scroll');
-    
     });
 }
 
