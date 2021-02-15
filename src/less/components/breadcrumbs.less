@@ -8,9 +8,17 @@
     &__item{
         font-size: 13px;
         color: #756A6A;
+        &:last-child{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #756a6a;
+        }
+        
         a{
             text-decoration: none;
             color: inherit;
+            
 
             &:hover{
                 text-decoration: underline;

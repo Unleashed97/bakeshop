@@ -49,7 +49,9 @@
     }
 
     &__main-add{
-
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     &__suggestions{
@@ -59,6 +61,22 @@
     &__suggestions-title{
         text-align: center;
         margin-bottom: 40px;
+    }
+
+    // MEDIA
+    @media @mobile-landscape{
+        &__main{
+            flex-wrap: wrap;
+        }
+
+        &__main-image{
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        &__main-desc{
+            width: 100%;
+        }
     }
 
 }
