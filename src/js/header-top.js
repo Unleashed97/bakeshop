@@ -1,17 +1,22 @@
-const header = document.querySelector('.header');
-let loc = window.location.pathname;
+const headerTop = () =>{
+    const header = document.querySelector('.header');
+    let is_root = location.pathname == "/";
+    console.log(location.pathname);
+    
+    // let loc = window.location.pathname;
 
-if(loc !== '/index.html'){
-    header.classList.add('scroll');
+    if(!is_root && location.pathname !== '/index.html'){
+        header.classList.add('scroll');
+    }
+    else if(is_root || location.pathname == '/index.html'){
+        const intro = document.querySelector('.intro');
+        let introHeight = intro.scrollHeight;
+        window.addEventListener('scroll', () =>{
+            if(pageYOffset > introHeight - 80){
+                header.classList.add('scroll')
+            }
+            else header.classList.remove('scroll');
+        });
+    }
 }
-else{
-    const intro = document.querySelector('.intro');
-    let introHeight = intro.scrollHeight;
-    window.addEventListener('scroll', () =>{
-        if(pageYOffset > introHeight - 80){
-            header.classList.add('scroll')
-        }
-        else header.classList.remove('scroll');
-    });
-}
-
+headerTop();
