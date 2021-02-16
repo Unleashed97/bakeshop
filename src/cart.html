@@ -17,9 +17,17 @@ title: Корзина
                 </div>
                 <div class="cart__item-col">
                     <span class="amount">
-                        <span class="amount__less"></span>
+                        <button class="button button--transp amount__dec">
+                            <svg class="amount__svg" width="24" height="24">
+                                <path d="M6 12 L18 12"  stroke-width="1" stroke="#F5A243" stroke-linecap="round"></path>
+                            </svg>
+                        </button>
                         <span class="amount__number">1</span>
-                        <span class="amount__more"></span>
+                        <button class="button button--transp amount__inc">
+                            <svg class="amount__svg" width="24" height="24">
+                                <path d="M6 12 L18 12 M12 6 L12 18"  stroke-width="1" stroke="#F5A243" stroke-linecap="round"></path>
+                            </svg>
+                        </button>
                     </span>
                 </div>
                 <div class="cart__item-col">
@@ -28,6 +36,7 @@ title: Корзина
                 <div class="cart__item-col">
                     <div class="cart__item-remove">
                         <i class="fas fa-trash-alt"></i>
+                        Удалить
                     </div>
                 </div>
             </div>
@@ -39,25 +48,31 @@ title: Корзина
                 <div class="data__section-content">
                     <div class="data__section-row">
                         <div class="data__row-item">
-                            <p class="data__row-item-title">Ваше имя</p>
-                            <label class="data__row-item-label">
-                                <p>Представьтесь пожалуйста</p>
-                                <input type="text" class="data__row-item-input" placeholder="Ваше имя">
-                            </label>
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">Ваше имя</p>
+                                <label class="data__row-item-label">
+                                    <p>Представьтесь пожалуйста</p>
+                                    <input type="text" class="data__row-item-input" placeholder="Ваше имя">
+                                </label>
+                            </div>
                         </div>
                         <div class="data__row-item">
-                            <p class="data__row-item-title">E-mail</p>
-                            <label class="data__row-item-label">
-                                <p>На какую почту вам прислать чек?</p>
-                                <input type="email" class="data__row-item-input" placeholder="area@mail.ru">
-                            </label>
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">E-mail</p>
+                                <label class="data__row-item-label">
+                                    <p>На какую почту вам прислать чек?</p>
+                                    <input type="email" class="data__row-item-input" placeholder="area@mail.ru">
+                                </label>
+                            </div>
                         </div>
                         <div class="data__row-item">
-                            <p class="data__row-item-title">Ваш телефон</p>
-                            <label class="data__row-item-label">
-                                <p>На всякий пожарный</p>
-                                <input type="tel" class="data__row-item-input" placeholder="+375 29 999 99 99">
-                            </label>
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">Ваш телефон</p>
+                                <label class="data__row-item-label">
+                                    <p>На всякий пожарный</p>
+                                    <input type="tel" class="data__row-item-input" placeholder="+375 29 999 99 99">
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,32 +82,44 @@ title: Корзина
                 <div class="data__section-content">
                     <div class="data__section-row">
                         <div class="data__row-item">
-                            <p class="data__row-item-title">Город</p>
-                            <input type="text" class="data__row-item-input" placeholder="Город">
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">Город</p>
+                                <input type="text" class="data__row-item-input" placeholder="Город">
+                            </div>
                         </div>
                         <div class="data__row-item">
-                            <p class="data__row-item-title">Улица</p>
-                            <input type="text" class="data__row-item-input" placeholder="Улица">
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">Улица</p>
+                                <input type="text" class="data__row-item-input" placeholder="Улица">
+                            </div>
                         </div>
-                        <div class="data__row-item data__row-item--sm">
-                            <p class="data__row-item-title">Дом</p>
-                            <input type="text" class="data__row-item-input" placeholder="Дом">
-                        </div>
-                        <div class="data__row-item data__row-item--sm">
-                            <p class="data__row-item-title">Квартира</p>
-                            <input type="text" class="data__row-item-input" placeholder="Квартира">
+                        <div class="data__row-item">
+                            <div class="data__row-item--sm">
+                                <div class="data__row-item-inner">
+                                    <p class="data__row-item-title">Дом</p>
+                                    <input type="text" class="data__row-item-input" placeholder="Дом">
+                                </div>
+                            </div>
+                            <div class="data__row-item--sm">
+                                <div class="data__row-item-inner">
+                                    <p class="data__row-item-title">Квартира</p>
+                                    <input type="text" class="data__row-item-input" placeholder="Квартира">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="data__section-row">
                         <div class="data__row-item data__row-item--lg">
-                            <p class="data__row-item-title">Комментарий</p>
-                            <textarea name="" id="" class="data__row-item-textarea" placeholder="Комментарий к заказу"></textarea>
+                            <div class="data__row-item-inner">
+                                <p class="data__row-item-title">Комментарий</p>
+                                <textarea name="" id="" class="data__row-item-textarea" placeholder="Комментарий к заказу"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="data__promo">
+            <!-- <div class="data__promo">
                 <p class="data__promo-title">Есть промокод?</p>
                 <div class="data__promo-content">
                     <div class="data__row-item">
@@ -105,7 +132,7 @@ title: Корзина
             <div class="data__form-footer">
                 <div class="data__form-total">Итог: </div>
                 <button class="button button--min">Оформить заказ</button>
-            </div>
+            </div> -->
         </form>
     </div>
 </div>

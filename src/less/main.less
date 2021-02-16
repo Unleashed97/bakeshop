@@ -75,6 +75,24 @@ h1, h2, h3, h4, h5, h6{
         font-size: 18px;
         text-transform: none;
     }
+
+    &--transp{
+        width: 26px;
+        height: 26px;
+        border: 1px solid @orange;
+        border-radius: 6px;
+        padding: 0;
+        background-color: transparent;
+
+        &:hover{
+            background-color: #F5A243;
+            .amount__svg{
+                path{
+                    stroke: #fff;
+                }
+            }
+        }
+    }
 }
 
 // NO SCROLL
