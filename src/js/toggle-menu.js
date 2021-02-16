@@ -1,6 +1,4 @@
-'use strict';
-
-window.onload = () => {
+const toggleMenu = () => {
     const toggleNav = document.querySelector('.toggle-nav');
     const header = document.querySelector('.header');
     const nav = document.querySelector('.nav');
@@ -15,4 +13,5 @@ window.onload = () => {
         nav.classList.toggle('active');
         body.classList.toggle('no-scroll');
     });
-};
+}
+toggleMenu();
