@@ -2,10 +2,10 @@ const headerTop = () =>{
     const header = document.querySelector('.header');
     let is_root = location.pathname == "/";
 
-    if(!is_root && location.pathname !== '/index.html' && location.pathname == '/bakeshop/dist/index.html'){
+    if(!is_root && location.pathname !== '/index.html' && location.pathname == '/bakeshop/dist/'){
         header.classList.add('scroll');
     }
-    else if(is_root || location.pathname == '/index.html' || location.pathname == '/bakeshop/dist/index.html'){
+    else if(is_root || location.pathname == '/index.html' || location.pathname == '/bakeshop/dist/'){
         const intro = document.querySelector('.intro');
         let introHeight = intro.scrollHeight;
         window.addEventListener('scroll', () =>{
